@@ -12,7 +12,7 @@ of each individual pixel in the original image.
 FCNs take advantages of three special techniques:
 * Firstly, replace fully connected layers of CNNs with 1x1 convolutional layers. 
 * Secondly, upsample through the usage of transposed convolutional layers; 
-* Thirdly, use skip connections. These skip connections allow the network to use information from multiple resolution scales so that the   network is able to make more precise segmentation decisions. For this case, use the the 3rd and the 4rd layer to perform the skip 
+* Thirdly, use skip connections. These skip connections allow the network to use information from multiple resolution scales so that the   network is able to make more precise segmentation decisions. For this case, extrally use the the 4rd and the 3rd layer to perform the skip 
   connections.
 
 The FCN implemented in the project is based on the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1605.06211).
