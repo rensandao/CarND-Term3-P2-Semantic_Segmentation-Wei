@@ -168,7 +168,7 @@ def run():
         # TODO: Build NN using load_vgg, layers, and optimize function
 		
 		# set the times to run the model.
-        epochs = 20
+        epochs = 50  #20
 		
 		# set the images amount to feed to FCN at a time.
         batch_size = 5
