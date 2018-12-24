@@ -40,13 +40,15 @@ I trained the FCN in Udacity GPU wordspace, the workspace had alreadly contained
 Hyper parameters used for training are as follows:
 * keep_prob = 0.5
 * learning_rate = 1e-4
-* epochs = 20
+* epochs = 50
 * batch_size = 5
 
 #### 5. Results
-
+Loss per batch tends to average below 0.12 after EPOCH 4 , below 0.05 after 10 epochs and below 0.02 after EPOCH 28. When it comes to
+EPOCH 40, it is also a little below 0.02 which becomes hard to reduce.
 
 * Samples
+
 I choose some samples from the result of the FCN. As can be seen, mostly the performance looks nice, most road districts are marked in
 green reasonablely. But ofcource in small number of images, it seems that semantic segamentation(FCN) hasn't labeled some more precise pixels because of environmental influence such as shadow or sharp light.
 
@@ -56,7 +58,6 @@ green reasonablely. But ofcource in small number of images, it seems that semant
 	  <img src="./runs/umm_000000.png">
 	    <img src="./runs/uu_000002.png">
 		 <img src="./runs/uu_000077.png">
-
 
 
 
