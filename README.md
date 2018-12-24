@@ -9,18 +9,18 @@ FCN
 * 1x1 conv
 * decoder
 
-#### Log pretrained vgg model(Encoder section)
+#### 1 Log pretrained vgg model(Encoder section)
 
-#### 1x1 conv and decoder
+#### 2 1x1 conv and decoder
 
-#### Optimize the FCN
+#### 3 Optimize the FCN
 
-#### Train
+#### 4 Train
 
-#### Hyper parameters 
+* Hyper parameters 
 
 
-#### Results
+#### 5 Results
 
 
 ### Samples
@@ -28,7 +28,7 @@ FCN
 
 
 
-
+Udacity origin document
 ------
 ### Setup
 ##### GPU
