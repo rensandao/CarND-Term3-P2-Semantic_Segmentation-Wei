@@ -53,7 +53,6 @@ green reasonablely. But ofcource in small number of images, it seems that semant
     <img src="./runs/um_000078.png">
 	 <img src="./runs/um_000087.png">
 	  <img src="./runs/umm_000000.png">
-	   <img src="./runs/umm_000022.png">
 	    <img src="./runs/uu_000002.png">
 		 <img src="./runs/uu_000077.png">
 
