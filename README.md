@@ -46,7 +46,10 @@ Hyper parameters used for training are as follows:
 
 
 ### Samples
+I choose some samples from the result of the FCN. As can be seen, mostly the performance looks nice, most road districts are marked in
+green reasonablely. But ofcource in small number of images, it seems that semantic segamentation(FCN) hasn't labeled some more precise pixels because of environmental influence such as shadow or sharp light.
 
+<img src="./runs/.png">
 
 
 
