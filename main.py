@@ -61,8 +61,7 @@ def layers(vgg_layer3_out, vgg_layer4_out, vgg_layer7_out, num_classes):
                                    kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
     # upsample
 	# Decoder layer 1
-    decoder_layer1 = tf.layers.conv2d_transpose(layer7_conv, num_classes, 4, strides = (2, 2), 
-                                             padding = 'same', 
+    decoder_layer1 = tf.layers.conv2d_transpose(layer7_conv, num_classes, 4, strides = (2, 2), padding = 'same', 
                                              kernel_initializer = tf.random_normal_initializer(stddev = 0.01), 
                                              kernel_regularizer = tf.contrib.layers.l2_regularizer(1e-3))
  
