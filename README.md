@@ -9,13 +9,13 @@ FCN
 * 1x1 conv
 * decoder
 
-#### 1 Log pretrained vgg model(Encoder section)
+#### 1. Log pretrained vgg model(Encoder section)
 
-#### 2 1x1 conv and decoder
+#### 2. 1x1 conv and decoder
 
-#### 3 Optimize the FCN
+#### 3. Optimize the FCN
 
-#### 4 Train
+#### 4. Train
 
 * Hyper parameters 
 
