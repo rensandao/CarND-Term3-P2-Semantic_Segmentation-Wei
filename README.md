@@ -12,7 +12,7 @@ of each individual pixel in the original image.
 FCNs take advantages of three special techniques:
 * Firstly, replace fully connected layers of CNNs with 1x1 convolutional layers. 
 * Secondly, upsample through the usage of transposed convolutional layers; 
-* Thirdly, use skip connections. These skip connections allow the network to use information from multiple resolution scales so that the   network is able to make more precise segmentation decisions. For this case, use the the 3rd and the 4rd layer to preform the skip 
+* Thirdly, use skip connections. These skip connections allow the network to use information from multiple resolution scales so that the   network is able to make more precise segmentation decisions. For this case, use the the 3rd and the 4rd layer to perform the skip 
   connections.
 
 The FCN implemented in the project is based on the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1605.06211).
@@ -20,14 +20,12 @@ The FCN implemented in the project is based on the paper [Fully Convolutional Ne
 From it, the FCN architecture used is shown as follows:
 <img src="./Images/FCN8s.png">
 
+#### 1. Load the pre-trained vgg model
 
-* Encoder
-* 1x1 conv
-* decoder
+The function `load_vgg` in `main.py` mainly load a pre-trained mode - [vgg16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip).
 
-#### 1. Log pretrained vgg model(Encoder section)
 
-#### 2. 1x1 conv and decoder
+#### 2. 1x1 conv and deconvolution
 
 #### 3. Optimize the FCN
 
