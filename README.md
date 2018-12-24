@@ -22,19 +22,27 @@ From it, the FCN architecture used is shown as follows:
 
 #### 1. Load the pre-trained vgg model
 
-The function `load_vgg` in `main.py` mainly load a pre-trained mode - [vgg16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip).
-
+The function `load_vgg()` in `main.py` mainly load a pre-trained mode - [vgg16](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip). This is actually the encoder part of FCNs.
 
 #### 2. 1x1 conv and deconvolution
+Next, the function `layers()` in `main.py` realize what the core three special techniques as described above:
+* Replace fully connected layer with 1x1 conv layer. After VGG layer 7, use 1x1 convolutions to continue;
+* Upsample the 1x1 convs output, using transposed convolution or called deconvolution.
+* Skip connections for twice(Because deconvolution, first should be from 4th layer of vgg, then the 3th layer)
 
 #### 3. Optimize the FCN
 
+In the function `optimize()` of `main.py`, the loss function is cross-entropy, and an Adam optimizer is used.
+
 #### 4. Train
 
-* Hyper parameters 
+Hyper parameters used for training are as follows:
+* keep_prob = 0.5
+* learning_rate = 1e-4
+* epochs = 20
+* batch_size = 5
 
-
-#### 5 Results
+#### 5. Results
 
 
 ### Samples
