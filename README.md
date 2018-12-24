@@ -4,7 +4,17 @@ In this project, you'll label the pixels of a road in images using a Fully Convo
 
 ### Implementation
 
-FCN
+#### 0. FCN architecture used in the project
+FCNs take advantages of three special techniques. Firstly, replace fully connected layers of CNNs with 1x1 convolutional layers. Secondly, upsample through the usage of transposed convolutional layers; Thirdly, use skip connections. These skip connections allow
+the network to use information from multiple resolution scales so that the network is able to make more precise segmentation decisions.
+
+Stucturally, an FCN is usually comprised of two parts: encoder and decoder. The encoder is a series of convolutional layers like VGG and
+ResNet. For this project, we use the pretrained VGG16 model. The goal of the encoder is to extract features from the image, the decoder upscales the output of the encoder such that it's the same size as the original image. Thus, it can result in segmentation or prediction
+of each individual pixel in the original image. 
+
+These above are the core part of Fully Convolutional Networks.
+
+
 * Encoder
 * 1x1 conv
 * decoder
