@@ -50,7 +50,7 @@ Hyper parameters used for training are as follows:
 
 
 
-Udacity origin document
+Udacity original document
 ------
 ### Setup
 ##### GPU
