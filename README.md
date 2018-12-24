@@ -16,7 +16,7 @@ FCNs take advantages of three special techniques:
   connections.
 
 FCN-8s architecture used is shown as follows:
-<img src="./Images/FCN8s.png" width="400px">
+<img src="./Images/FCN8s.png">
 
 
 * Encoder
