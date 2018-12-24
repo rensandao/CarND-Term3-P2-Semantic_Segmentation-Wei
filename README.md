@@ -15,7 +15,9 @@ FCNs take advantages of three special techniques:
 * Thirdly, use skip connections. These skip connections allow the network to use information from multiple resolution scales so that the   network is able to make more precise segmentation decisions. For this case, use the the 3rd and the 4rd layer to preform the skip 
   connections.
 
-FCN-8s architecture used is shown as follows:
+The FCN implemented in the project is based on the paper [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1605.06211).
+
+From it, the FCN architecture used is shown as follows:
 <img src="./Images/FCN8s.png">
 
 
