@@ -35,7 +35,7 @@ Next, the function `layers()` in `main.py` realize what the core three special t
 In the function `optimize()` of `main.py`, the loss function is cross-entropy, and an Adam optimizer is used.
 
 #### 4. Train
-I trained the FCN in Udacity GPU wordspace, the workspace had alreadly contained both the road images and VGG mode.
+I trained the FCN in Udacity GPU workspace, the workspace had alreadly contained both the road images and VGG mode.
 
 Hyper parameters used for training are as follows:
 * keep_prob = 0.5
